@@ -202,7 +202,7 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
         })
         })
     })
-    }
+    }.
 }); 
 
 const credits = JSON.parse(fs.readFileSync("./creditsCode.json", "utf8"));
@@ -2587,7 +2587,7 @@ client.on('message', message => {
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
-    channel: "welcome"
+    channel: "✽-welcome"
 }
 const channel = sWlc[message.guild.id].channel
   if (message.content.startsWith(prefix + "setwelcomer")) {
@@ -2603,7 +2603,7 @@ if (err) console.error(err);
 });
 client.on("guildMemberAdd", member => {
       if(!sWlc[member.guild.id]) sWlc[member.guild.id] = {
-    channel: "welcome"
+    channel: "✽-welcome"
   }
   const channel = sWlc[member.guild.id].channel
     const sChannel = sWlc[member.guild.id].channel
