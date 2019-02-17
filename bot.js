@@ -202,7 +202,6 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
         })
         })
     })
-    }.
 }); 
 
 const credits = JSON.parse(fs.readFileSync("./creditsCode.json", "utf8"));
