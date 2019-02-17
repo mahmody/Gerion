@@ -201,8 +201,7 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
             msg.edit(embed)
         })
         })
-    })
-}); 
+    }) 
 
 const credits = JSON.parse(fs.readFileSync("./creditsCode.json", "utf8"));
 const coolDown = new Set();
