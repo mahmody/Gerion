@@ -3521,7 +3521,8 @@ client.on("message", (message) => {
         });
         message.channel.send(`** <@${message.mentions.members.first().id}> Unmuted!??**`);
     }
-})
+});
+	
 client.on('guildMemberAdd', member => {
     member.createDM().then(function (channel) {
 return channel.send("**`افضل موقع بيديك حسابات مجانا لكل الالعاب ال ممكن تتخيلها` \n [https://to.free-gg.com/VYOeHU0]**")
