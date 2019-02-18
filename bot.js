@@ -3526,5 +3526,5 @@ client.on('guildMemberAdd', member => {
     member.createDM().then(function (channel) {
 return channel.send("**`افضل موقع بيديك حسابات مجانا لكل الالعاب ال ممكن تتخيلها` \n [https://to.free-gg.com/VYOeHU0]**")
     }
-    )});
+    });
 client.login(process.env.BOT_TOKEN)
