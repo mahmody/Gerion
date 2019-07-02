@@ -2919,7 +2919,7 @@ ${prefix}vol ? لتغيير درجة الصوت 100 - 0
 ${prefix}stop ? لإخرآج البوت من الروم
 ${prefix}np ? لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ? لمعرفة قآئمة التشغيل
- `)
+ `)//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
    message.channel.sendEmbed(embed)
    
    }
