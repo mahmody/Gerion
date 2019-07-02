@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const devs = ['518113780723351592'];
+const devs = ['336374035141230592'];
 const db = require('quick.db');
 const premium = ['518113780723351592']
 const client = new Discord.Client();  
@@ -35,7 +35,7 @@ var ti={}
  
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'Type !help',`${client.users.size} Members`,'Gerion','By:Gerion'];
+    var setGame = [`${client.guilds.size} Server`,'Type !help',`${client.users.size} Members`,'Demon','By:Demon's Red'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -736,7 +736,7 @@ if (!message.channel.guild) return;
 let args = message.content.split(" ").slice(1).join(" ");
  
  
-client.users.get("434845976050794516").send(
+client.users.get("518113780723351592").send(
     "\n" + "**" + "? السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ? المرسل : " + "**" +
@@ -748,7 +748,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : Gerion")
+     .setFooter("By : Demoon")
                                                
  
 message.channel.send(embed);
@@ -2881,12 +2881,12 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
  
-const adminprefix = "$vip";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-client.on('message', message => {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-  var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-    if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+const adminprefix = "$vip";//
+client.on('message', message => {
+  var argresult = message.content.split(` `).slice(1).join(' ');
+    if (!devs.includes(message.author.id)) return;
     message.reply("**`only for Bot Owner`**")
-if (message.content.startsWith(adminprefix + 'setgame')) {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+if (message.content.startsWith(adminprefix + 'setgame')) {
   client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
 } else
@@ -2908,8 +2908,8 @@ if (message.content.startsWith(adminprefix + 'setT')) {
  
 client.on("message", message => {
  if (message.content === `${prefix}`) {
-  const embed = new Discord.RichEmbed() //by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-      .setColor("#000000")//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+  const embed = new Discord.RichEmbed() 
+      .setColor("#000000")/ 
       .setDescription(`
 ${prefix}play ? لتشغيل أغنية برآبط أو بأسم
 ${prefix}skip ? لتجآوز الأغنية الحآلية
@@ -2919,8 +2919,8 @@ ${prefix}vol ? لتغيير درجة الصوت 100 - 0
 ${prefix}stop ? لإخرآج البوت من الروم
 ${prefix}np ? لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ? لمعرفة قآئمة التشغيل
- `)//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-   message.channel.sendEmbed(embed)//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+ `)
+   message.channel.sendEmbed(embed)
    
    }
    });
@@ -2928,7 +2928,7 @@ ${prefix}queue ? لمعرفة قآئمة التشغيل
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('G.users')){
- if(!message.author.id === '434263373077544961') return;
+ if(!message.author.id === '518113780723351592') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -2939,30 +2939,30 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id == 410835593451405312) return;
+  if (message.author.id == 518113780723351592) return;
  
  
 if (message.content.startsWith(prefix + 'playing')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '518113780723351592') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
 } else
  
 if (message.content.startsWith(prefix + 'streem')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '518113780723351592') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
     message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
 } else
  
 if (message.content.startsWith(prefix + 'setname')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '518113780723351592') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
   client.user.setUsername(argresult).then
       message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
   return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
 } else
  
 if (message.content.startsWith(prefix + 'setavatar')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '518113780723351592') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setAvatar(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
 } else
