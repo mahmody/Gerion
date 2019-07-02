@@ -3520,7 +3520,8 @@ client.on("message", (message) => {
         });
         message.channel.send(`** <@${message.mentions.members.first().id}> Unmuted!??**`);
     }
+   }	
 });
 
 	
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN)
